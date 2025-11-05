@@ -2,9 +2,24 @@
 
 let now = new Date();
 
-// let currentDateTime = now.toLocalString();
-// console.log(${currentDateTime});
+let currentDateTime = now.toLocaleString();
+document.getElementById("timer").textContent = currentDateTime
 
-        const currentDateTime = now.toLocaleString();
-        console.log(`Current Date and Time: ${currentDateTime}`);
-        // Example output: "11/5/2025, 8:57:00 PM" (format varies by locale)
+console.log(`${currentDateTime}`);
+
+// Function to update timer every second
+// function updateTimer() {
+//   const now = new Date();
+//   const currentDateTime = now.toLocaleString(); // correct method
+//   document.getElementById("timer").textContent = currentDateTime;
+// }
+
+// // call function every 1 second
+// setInterval(updateTimer, 1000);
+
+// // call immediately when page loads
+// updateTimer();
+
+
+
+
